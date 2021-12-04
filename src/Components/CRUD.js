@@ -34,7 +34,7 @@ class CRUD extends Component {
                 <div>test</div>
                 <div >
                     {this.state.jobs.map((job, index) =>
-                        <div style={{ display: "flex", flexDirection: "row" }}>
+                        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
                             <div key={index}>{job}</div>
                             <div onClick={() => this.handleRemoveJob(index)}>X</div>
                         </div>
